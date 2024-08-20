@@ -21,6 +21,7 @@ public class FutureCancelMain {
         // cancel() 호출
         log("future.cancel(" + mayInterruptIfRunning + ") 호출");
         boolean cancelResult = future.cancel(mayInterruptIfRunning);
+        log("Future.state: " + future.state());
         log("cancel(" + mayInterruptIfRunning + ") result: " + cancelResult);
 
         // 결과 확인
